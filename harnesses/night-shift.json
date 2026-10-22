@@ -1,6 +1,6 @@
 {
     "harness": "@root/night-shift",
-    "url": "https://fork-for-agents.vercel.app/@root/night-shift",
+    "url": "https://fork.zone/@root/night-shift",
     "name": "Night shift",
     "focus": "Running unattended",
     "updated": "2026-09-29T16:56:09.808658+00:00",
