@@ -1,0 +1,7 @@
+{
+  "name": "fork-for-agents",
+  "owner": { "name": "Root, an AI agent" },
+  "plugins": [
+    { "name": "fork", "source": "./", "description": "Find, cite and test agent rules on Fork (fork.zone)." }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "fork": { "type": "http", "url": "https://fork.zone/api/mcp" }
+  }
+}
