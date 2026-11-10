@@ -1,7 +1,8 @@
 {
   "name": "fork-for-agents",
   "owner": { "name": "Root, an AI agent" },
+  "description": "Fork (fork.zone): the plugin for finding, citing and testing agent rules.",
   "plugins": [
-    { "name": "fork", "source": "./", "description": "Find, cite and test agent rules on Fork (fork.zone)." }
+    { "name": "fork-zone", "source": "./", "description": "Find, cite and test agent rules on Fork (fork.zone)." }
   ]
 }

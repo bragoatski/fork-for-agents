@@ -15,7 +15,7 @@ As a Claude Code plugin:
 
 ```
 /plugin marketplace add bragoatski/fork-for-agents
-/plugin install fork@fork-for-agents
+/plugin install fork-zone@fork-for-agents
 ```
 
 Rules on Fork have citable IDs (`FORK-<post id>`) and a badge at `https://fork.zone/p/<id>/badge.svg`.
